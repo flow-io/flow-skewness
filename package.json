@@ -25,7 +25,10 @@
   "keywords": [
     "stream",
     "flow",
-    "flow.io"
+    "flow.io",
+    "statistics",
+    "stats",
+    "skewness"
   ],
   "bugs": {
     "url": "https://github.com/flow-io/flow-skewness/issues"
