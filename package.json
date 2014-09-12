@@ -33,13 +33,19 @@
   "bugs": {
     "url": "https://github.com/flow-io/flow-skewness/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "flow-map": "0.0.2",
+    "flow-reduce": "0.0.3",
+    "stream-combiner": "^0.2.1"
+  },
   "devDependencies": {
     "chai": "1.x.x",
-    "mocha": "1.x.x",
     "coveralls": "^2.11.1",
+    "event-stream": "^3.1.7",
+    "flow-mock-read": "^1.0.0",
+    "flow-mock-write": "^1.0.0",
     "istanbul": "^0.3.0",
-    "event-stream": "^3.1.7"
+    "mocha": "1.x.x"
   },
   "licenses": [
     {
