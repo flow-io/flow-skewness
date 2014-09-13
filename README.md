@@ -14,7 +14,7 @@ $ npm install flow-skewness
 For use in the browser, use [browserify](https://github.com/substack/node-browserify).
 
 
-## API
+## Usage
 
 To create a stream factory,
 
@@ -25,25 +25,16 @@ var flowFactory = require( 'flow-skewness' );
 var flowStream = flowFactory();
 ```
 
-### flowStream.stream()
+The factory has the following methods...
 
-To create a new stream,
+
+#### flowStream.stream()
+
+Creates a new stream for computing the sample skewness. To create a new stream,
 
 ``` javascript
 var stream = flowStream.stream();
 ```
-
-
-## Usage
-
-Methods are chainable.
-
-``` javascript
-flowFactory()
-	.stream()
-	.pipe( /* writable stream */ );
-```
-
 
 
 ## Examples
@@ -78,6 +69,15 @@ To run the example code from the top-level application directory,
 ``` bash
 $ node ./examples/index.js
 ```
+
+
+## Notes
+
+The formula for computing the sample skewness comes from
+
+> Jones and Gill (1998). Comparing measures of sample skewness and kurtosis. _The Statistician_. [DOI: 10.1111/1467-9884.00122](http://onlinelibrary.wiley.com/doi/10.1111/1467-9884.00122/)
+
+The test data comes from [Measures of Shape: Skewness and Kurtosis](http://www.tc3.edu/instruct/sbrown/stat/shape.htm) by Stan Brown.
 
 
 ## Tests
