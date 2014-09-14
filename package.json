@@ -1,6 +1,6 @@
 {
   "name": "flow-skewness",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Transform stream factory to calculate the sample skewness of streamed data values.",
   "author": {
     "name": "Athan Reines",
