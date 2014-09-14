@@ -29,6 +29,10 @@ describe( 'flow-skewness', function tests() {
 		expect( flowFactory ).to.be.a( 'function' );
 	});
 
+	it( 'should have a stream method', function test() {
+		expect( flowFactory().stream ).to.be.a( 'function' );
+	});
+
 	it( 'should compute the skewness of streamed data', function test( done ) {
 		var scores = [ 61, 64, 67, 70, 73 ],
 			freq = [ 5, 18, 42, 27, 8 ],
